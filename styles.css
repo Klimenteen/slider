@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Muli', sans-serif;
     margin: 0;
