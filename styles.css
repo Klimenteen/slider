@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    background: #202020;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    width: 100vw;
+    text-align: justify;
+    top: 5px;
+    font-size: 3rem;
+    color: #909090;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    top: 60px;
+    display: flex;
+    position: absolute;
+}
+
+.slide {
+    height: 80vh;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    flex: 1;
+    color: #fff;
+    background-size: cover;
+    background-position: centre;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 500ms ease-in-out;
+}
+
+.slide h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.slide.active {
+    flex: 10;
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4;
+}
+
+.arrow {
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+    font-size: 2rem;
+    color: #505050;
+    animation: jumper 2s infinite;
+}
+
+@keyframes jumper {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: -10vh;
+    left: 0vw;
+    margin: 0;
+    height: 10vh;
+    width: 100vw;
+    /* padding: 10px; */
+    text-align: center;
+    background-color: #101010;
+}
+
+.contact_us {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    color: #3a3a42;
+    height: 10vh;
+    display: flex;
+    position: static;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-icon {
+    font-size: 2rem;
+    color: #505050;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-us-icon:hover {
+    color: #2a2a30;
+}
+
+.made {
+    position: absolute;
+    right: 5vw;
+    top: 4vh;
+    color: #505050;
+    margin: 0;
+    font-size: 1rem;
+}
